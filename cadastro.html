@@ -111,12 +111,17 @@
                         <div class="btn-group">
                             <div class="btn-group">
                                 <button type="button" class="btn custom-button">< Voltar para Login</button>
-                                <button type="button" class="btn custom-button">Cadastrar ></button>
+                                <button id="cadastrar" type="button" class="btn custom-button">Cadastrar ></button>
                             </div>
                         </div>
                     </div>
 
                 </form>
+            </div>
+            <div class="alert alert-success alert-dismissable">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                Sucesso. Enviamos uma mensagem ao seu e-mail para confirmação do seu
+                cadastro.
             </div>
         </div>
 
@@ -133,10 +138,15 @@
 <footer class="footer">
     <div class="container">
 
-        <p class="text-muted footer-text text-center">
-            <img src="assets/img/icon_footer.png"  alt="">
-            © COPYRIGHT MAPFRE 2016 - TODOS OS DIREITOS RESERVADOS | POLÍTICA DE PRIVACIDADE
-        </p>
+        <footer class="footer">
+            <div class="container">
+
+                <p class="text-muted footer-text text-center">
+                    <img src="assets/img/icon_footer.png" alt="">
+                    © COPYRIGHT MAPFRE 2016 - TODOS OS DIREITOS RESERVADOS | POLÍTICA DE PRIVACIDADE
+                </p>
+            </div>
+        </footer>
     </div>
 </footer>
 
@@ -147,9 +157,17 @@
 <script src="./assets/jquery/dist/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
 <script src="./assets/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="./assets/bootstrap/js/alert.js"></script>
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <!--<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>-->
-
+<script>
+    $(document).ready(function(){
+        $('#cadastrar').click(function(){
+            //console.log("!");
+            $('.alert').show()
+        })
+    });
+</script>
 
 </body>
 </html>

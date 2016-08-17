@@ -90,18 +90,21 @@
                         <label for="CPF">CPF ou E-MAIL</label>
                         <input type="text" class="form-control" id="CPF" placeholder="CPF ou E-MAIL">
                     </div>
-
                     <div class="form-group text-center">
                         <div class="btn-group">
                             <div class="btn-group">
-                                <button type="button" class="btn custom-button ">Gerar nova Senha ></button>
+                                <button id="gerar" type="button" class="btn custom-button ">Gerar nova Senha ></button>
 
                                 <button type="button" class="btn custom-button">< Voltar para o Login</button>
                             </div>
                         </div>
                     </div>
-
                 </form>
+            </div>
+            <div class="alert alert-success alert-dismissable">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                Sucesso. Enviamos uma mensagem ao seu e-mail informando o procedimento
+                para troca de sua senha.
             </div>
             * Será enviado uma mensagem ao seu email cadastrado com as instruções para cadastrar sua nova senha.
         </div>
@@ -133,6 +136,14 @@
 <script src="./assets/jquery/dist/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
 <script src="./assets/bootstrap/dist/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('#gerar').click(function(){
+            //console.log("!");
+            $('.alert').show()
+        })
+    });
+</script>
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <!--<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>-->
 

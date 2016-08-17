@@ -103,11 +103,16 @@
                     <div class="form-group text-center">
                         <div class="btn-group">
                             <div class="btn-group">
-                                <button type="button" class="btn custom-button">Alterar senha ></button>
+                                <button id="alterar" type="button" class="btn custom-button">Alterar senha ></button>
                             </div>
                         </div>
                     </div>
                 </form>
+            </div>
+
+            <div class="alert alert-success alert-dismissable">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                Senha alterada com sucesso. Você já pode acessar nosso portal novamente.
             </div>
         </div>
 
@@ -138,6 +143,14 @@
 <script src="./assets/jquery/dist/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
 <script src="./assets/bootstrap/dist/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#alterar').click(function () {
+            //console.log("!");
+            $('.alert').show()
+        })
+    });
+</script>
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <!--<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>-->
 
