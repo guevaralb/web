@@ -11,6 +11,12 @@
     color: #fff;
 }
 
+.btn{
+    margin: 10px;
+    border-radius: 0.5em 0.5em 0.5em 0.5em !important;
+
+
+}
 .img-responsive{
     display: inherit;
     max-width: 100%;
