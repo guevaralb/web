@@ -17,6 +17,11 @@
 
 }
 
+.bg-default {
+
+    background-color: #EEEEEE;
+}
+
 table.table-hover {
     width: 100%;
 }
