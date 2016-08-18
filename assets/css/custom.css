@@ -29,6 +29,14 @@
     background-color: #EEEEEE;
 }
 
+.table td {
+    text-align: center;
+}
+
+.table th {
+    text-align: center;
+}
+
 table.table-hover {
     width: 100%;
 }
