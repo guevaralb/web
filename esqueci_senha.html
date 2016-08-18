@@ -36,76 +36,72 @@
 
 <!-- Fixed navbar -->
 <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-        <div class="navbar-header">
-            <!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
-                    aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>-->
-
-            <img class="img-responsive"
-                 src="assets/img/Logo_mapfre_trevo_CMYK.png"
-                 alt="">
+    <div>
+        <img class="logo"
+             src="assets/img/Logo_mapfre_trevo_CMYK.png"
+             alt="">
+        <div class="pull-right">
+            <button class=" btn custom-button">Área do Cliente</button>
         </div>
-        <ul class="nav navbar-nav navbar-right">
-            <li><a href="" style="color: #FFF;">Área do Cliente</a></li>
-        </ul>
-        <!--<div id="navbar" class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                       aria-expanded="false">Dropdown <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li class="dropdown-header">Nav header</li>
-                        <li><a href="#">Separated link</a></li>
-                        <li><a href="#">One more separated link</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>&lt;!&ndash;/.nav-collapse &ndash;&gt;-->
     </div>
+
+
+    <!--<div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                   aria-expanded="false">Dropdown <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li class="dropdown-header">Nav header</li>
+                    <li><a href="#">Separated link</a></li>
+                    <li><a href="#">One more separated link</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>&lt;!&ndash;/.nav-collapse &ndash;&gt;-->
+
+
 </nav>
 
 <!-- Begin page content -->
 <div class="container">
     <div class="row">
         <div class="col-md-6 col-md-offset-3">
-            <h3 class="text-center">
-                <span class="glyphicon glyphicon-lock" aria-hidden="true"> </span>Esqueci minha senha
-            </h3>
-            <div class="jumbotron">
-                <form>
-
-                    <div class="form-group">
-                        <label for="CPF">CPF ou E-MAIL</label>
-                        <input type="text" class="form-control" id="CPF" placeholder="CPF ou E-MAIL">
-                    </div>
-                    <div class="form-group text-center">
-                        <div class="btn-group">
+            <div class="row">
+                <h3 class="text-center">
+                    <span class="glyphicon glyphicon-lock" aria-hidden="true"> </span>Esqueci minha senha
+                </h3>
+            </div>
+            <div class="row">
+                <div class="well">
+                    <form>
+                        <div class="form-group">
+                            <label for="CPF">CPF ou E-MAIL</label>
+                            <input type="text" class="form-control" id="CPF" placeholder="CPF ou E-MAIL">
+                        </div>
+                        <div class="form-group text-center">
                             <div class="btn-group">
-                                <button id="gerar" type="button" class="btn custom-button ">Gerar nova Senha ></button>
-
-                                <button type="button" class="btn custom-button">< Voltar para o Login</button>
+                                <button id="gerar" type="button" class="btn btn-sm custom-button ">Gerar nova Senha >
+                                </button>
+                                <button type="button" class="btn btn-sm custom-button">< Voltar para o Login</button>
                             </div>
                         </div>
-                    </div>
-                </form>
+                    </form>
+                </div>
+                <div class="alert alert-success alert-dismissable">
+                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                    Sucesso. Enviamos uma mensagem ao seu e-mail informando o procedimento
+                    para troca de sua senha.
+                </div>
             </div>
-            <div class="alert alert-success alert-dismissable">
-                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                Sucesso. Enviamos uma mensagem ao seu e-mail informando o procedimento
-                para troca de sua senha.
-            </div>
+
             * Será enviado uma mensagem ao seu email cadastrado com as instruções para cadastrar sua nova senha.
         </div>
 
@@ -120,13 +116,15 @@
     <p>Back to <a href="../sticky-footer">the default sticky footer</a> minus the navbar.</p>-->
 </div>
 
+<!--footer-->
 <footer class="footer">
-    <div class="container">
-
-        <p class="text-muted footer-text text-center">
-            <img src="assets/img/icon_footer.png" alt="">
-            © COPYRIGHT MAPFRE 2016 - TODOS OS DIREITOS RESERVADOS | POLÍTICA DE PRIVACIDADE
-        </p>
+    <div class="container-fluid">
+        <div class="row">
+            <p class="text-muted footer-text text-center">
+                <img src="assets/img/icon_footer.png" alt="">
+                © COPYRIGHT MAPFRE 2016 - TODOS OS DIREITOS RESERVADOS | POLÍTICA DE PRIVACIDADE
+            </p>
+        </div>
     </div>
 </footer>
 
@@ -137,8 +135,8 @@
 <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
 <script src="./assets/bootstrap/dist/js/bootstrap.min.js"></script>
 <script>
-    $(document).ready(function(){
-        $('#gerar').click(function(){
+    $(document).ready(function () {
+        $('#gerar').click(function () {
             //console.log("!");
             $('.alert').show()
         })
