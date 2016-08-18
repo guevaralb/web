@@ -1,3 +1,4 @@
+
 .title {
     color: #ED1C24;
 }
@@ -39,10 +40,14 @@
 
 table.table-hover {
     width: 100%;
+    table-layout: fixed;
+    word-wrap: break-word;
+    min-width: 768px;
 }
 
 table.table.table-hover tr td {
-    width: 100%
+    width: 100%;
+
 }
 
 .img-responsive {
